@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogIn"
+    android:background="#ede9e9">
+
+    //Toolbar shape
+    <com.github.florent37.shapeofview.shapes.RoundRectView
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:elevation="4dp"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:roundRect_bottomLeftDiameter="150dp">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:background="@drawable/log"/>
+
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
+    //phone
+    <FrameLayout
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.516">
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="288dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:background="@drawable/edt"
+            android:drawablePadding="8dp"
+            android:hint="@string/phone"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingRight="160dp">
+
+        </EditText>
+
+        <ImageView
+            android:id="@+id/call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_local_phone_black_24dp" />
+
+    </FrameLayout>
+//password
+    <FrameLayout
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.649">
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="288dp"
+            android:layout_height="45dp"
+            android:background="@drawable/edt"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:paddingRight="177dp"/>
+
+
+        <ImageView
+            android:id="@+id/key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_vpn_key_black_24dp" />
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/forget"
+        android:textColor="@color/textColor"
+        android:textSize="12sp"
+        android:padding="5dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.769" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="288dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="ورود"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/textColor2"
+        android:background="@drawable/btn_log"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.608"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.88" />
+</android.support.constraint.ConstraintLayout>
