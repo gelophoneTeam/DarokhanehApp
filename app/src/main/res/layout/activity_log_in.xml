@@ -82,7 +82,7 @@
         app:layout_constraintVertical_bias="0.649">
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/password"
             android:layout_width="288dp"
             android:layout_height="45dp"
             android:background="@drawable/edt"
@@ -104,7 +104,7 @@
 
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/forgot"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -123,7 +123,7 @@
         app:layout_constraintVertical_bias="0.769" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/logIn"
         android:layout_width="288dp"
         android:layout_height="45dp"
         android:layout_marginStart="8dp"
