@@ -24,7 +24,7 @@ public class SignUp extends AppCompatActivity {
         log=(TextView)findViewById(R.id.log);
        had=(TextView)findViewById(R.id.had);
         img=(TextView)findViewById(R.id.img);
-        signUp=(Button)findViewById(R.id.logIn);
+        signUp=(Button)findViewById(R.id.signUp);
 
 
 //set fonts
