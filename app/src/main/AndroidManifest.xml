@@ -20,7 +20,8 @@
         <activity android:name=".VerificationCode" />
         <activity android:name=".Chat" />
         <activity android:name=".CounterDown" />
-        <activity android:name=".Noskhe"></activity>
+        <activity android:name=".Noskhe" />
+        <activity android:name=".NoNoskhe"></activity>
     </application>
 
 </manifest>
