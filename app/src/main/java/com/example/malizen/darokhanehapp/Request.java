@@ -50,7 +50,8 @@ public class Request extends AppCompatActivity {
         setContentView(R.layout.activity_request);
 
         listview = (ListView) findViewById(R.id.listview);
-        listview.setAdapter(new Adaptor(this, osNameList, osImages,osnumber,osBookMark));  flowingDrawer = (FlowingDrawer) findViewById(R.id.flowingdrawer);
+        listview.setAdapter(new Adaptor(this, osNameList, osImages,osnumber,osBookMark));
+        flowingDrawer = (FlowingDrawer) findViewById(R.id.flowingdrawer);
         flowingDrawer.setTouchMode(ElasticDrawer.TOUCH_MODE_BEZEL);
 
         setupTolbar();
