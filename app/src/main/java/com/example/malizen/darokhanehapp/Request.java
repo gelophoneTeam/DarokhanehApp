@@ -6,9 +6,10 @@ import android.widget.ListView;
 
 public class Request extends AppCompatActivity {
     public static int[] osImages = {
-            R.drawable.ic_pill,
-            R.drawable.ic_pharm,
-            R.drawable.ic_pill,
+            R.drawable.ic_group_784,
+            R.drawable.ic_group_787,
+            R.drawable.ic_group_784,
+
     };
 
 

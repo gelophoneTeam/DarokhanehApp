@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f9fafc"
+    android:background="#fff"
     tools:context=".MainActivity">
 
     <com.github.florent37.shapeofview.shapes.RoundRectView
@@ -13,7 +13,7 @@
         android:layout_height="200dp"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="0dp"
-        android:background="#f9fafc"
+        android:background="#fff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -26,14 +26,23 @@
             android:id="@+id/imgv"
             android:layout_width="match_parent"
             android:layout_height="170dp"
-            android:background="@drawable/toolbar" />
+            android:background="@drawable/toolbar"
+            />
 
         <ImageView
-            android:layout_width="60dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="350dp"
-            android:layout_marginTop="45dp"
-            android:src="@drawable/ic_menu_item" />
+            android:layout_gravity="right"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_menu" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_videos_purchased" />
 
     </com.github.florent37.shapeofview.shapes.RoundRectView>
     <TextView
@@ -41,10 +50,11 @@
         android:layout_width="wrap_content"
         android:layout_height="23dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="320dp"
+        android:layout_marginTop="150dp"
         android:layout_marginEnd="8dp"
-        android:background="#f9fafc"
+        android:background="#fff"
         android:text="درخواست ها"
+        android:layout_gravity="right"
         android:textColor="#b4b4b5"
         android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/round"
@@ -72,15 +82,70 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
-            android:divider="#f9fafc"
-            android:dividerHeight="30dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/txtR"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_marginBottom="20dp"
+            android:divider="#fff"
+            android:dividerHeight="30dp"/>
     </android.support.constraint.ConstraintLayout>
-</android.support.constraint.ConstraintLayout>
+    !-- Main content -->
+
+    <android.support.design.bottomappbar.BottomAppBar
+        android:id="@+id/bottomappbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:backgroundTint="#fff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:paddingEnd="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            >
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_user_male"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                />
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_credit_card"
+                android:paddingRight="20dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_group_1"
+                android:paddingLeft="40dp"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_wallet"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+        </LinearLayout>
+    </android.support.design.bottomappbar.BottomAppBar>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:backgroundTint="#22bf32"
+        android:src="@drawable/ic_bell"
+        app:layout_anchor="@id/bottomappbar"
+        android:id="@+id/bottomfab"
+        />
+
+</android.support.design.widget.CoordinatorLayout>
