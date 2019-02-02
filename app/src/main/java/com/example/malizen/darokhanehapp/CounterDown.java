@@ -31,7 +31,9 @@ public class CounterDown extends AppCompatActivity implements View.OnClickListen
 
 
         private long timeCountInMilliSeconds = 1 * 60000;
-        private enum TimerStatus {
+
+
+    private enum TimerStatus {
             STARTED,
             STOPPED
         }
@@ -44,18 +46,13 @@ public class CounterDown extends AppCompatActivity implements View.OnClickListen
         private ImageView imageViewReset;
         private ImageView imageViewStartStop;
         private CountDownTimer countDownTimer;
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_counter_down);
+        @Override
 
             // method call to initialize the views
             initViews();
             // method call to initialize the listeners
             initListeners();
-
-
-        }
+            }}
 
         /**
          * method to initialize the views

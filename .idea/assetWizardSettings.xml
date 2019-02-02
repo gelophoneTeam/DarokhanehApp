@@ -28,9 +28,10 @@
                         </option>
                         <option name="values">
                           <map>
+                            <entry key="assetSourceType" value="FILE" />
                             <entry key="color" value="4a4a4a" />
-                            <entry key="outputName" value="ic_local_phone_black_24dp" />
-                            <entry key="sourceFile" value="C:\Users\mohammad" />
+                            <entry key="outputName" value="ic_group_748" />
+                            <entry key="sourceFile" value="C:\Users\mohammad\Documents\svg\Group 748.svg" />
                           </map>
                         </option>
                       </PersistentState>

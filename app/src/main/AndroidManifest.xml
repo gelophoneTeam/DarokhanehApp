@@ -19,7 +19,8 @@
         <activity android:name=".LogIn" />
         <activity android:name=".VerificationCode" />
         <activity android:name=".Chat" />
-        <activity android:name=".CounterDown"></activity>
+        <activity android:name=".CounterDown" />
+        <activity android:name=".Noskhe"></activity>
     </application>
 
 </manifest>
