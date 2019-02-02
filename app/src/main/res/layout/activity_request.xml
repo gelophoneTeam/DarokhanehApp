@@ -1,94 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#fff">
 
-    <com.github.florent37.shapeofview.shapes.RoundRectView
-        android:id="@+id/round"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginTop="0dp"
-        android:background="#fff"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0">
-
-
-        <ImageView
-            android:id="@+id/imgv"
-            android:layout_width="match_parent"
-            android:layout_height="170dp"
-            android:background="@drawable/toolbar"
-            />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:layout_marginTop="30dp"
-            android:layout_marginRight="20dp"
-            android:src="@drawable/ic_menu" />
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:layout_marginTop="30dp"
-            android:layout_marginLeft="20dp"
-            android:src="@drawable/ic_videos_purchased" />
-
-    </com.github.florent37.shapeofview.shapes.RoundRectView>
-    <TextView
-        android:id="@+id/txtR"
-        android:layout_width="wrap_content"
-        android:layout_height="23dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginEnd="8dp"
-        android:background="#fff"
-        android:text="درخواست ها"
-        android:layout_gravity="right"
-        android:textColor="#b4b4b5"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/round"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.914"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <android.support.constraint.ConstraintLayout
+    <com.mxn.soul.flowingdrawer_core.FlowingDrawer
+        android:id="@+id/flowingdrawer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="30dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="188dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="NotSibling">
+        app:edMenuBackground="#00ffffff"
+        app:edMenuSize="270dp"
+        app:edPosition="4"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
 
-        <ListView
-            android:id="@+id/listview"
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:background="@drawable/toolbar"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp">
+
+
+            </android.support.v7.widget.Toolbar>
+            <TextView
+                android:id="@+id/txtR"
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginEnd="8dp"
+                android:background="#fff"
+                android:text="درخواست ها"
+                android:layout_gravity="right"
+                android:textColor="#b4b4b5"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.914"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="188dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="NotSibling">
+
+
+                <ListView
+                    android:id="@+id/listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="20dp"
+                    android:divider="#f9fafc"
+                    android:dividerHeight="30dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/txtR"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+        </android.support.constraint.ConstraintLayout>
+
+        <com.mxn.soul.flowingdrawer_core.FlowingMenuLayout
+            android:id="@+id/menulayout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="20dp"
-            android:divider="#fff"
-            android:dividerHeight="30dp"/>
-    </android.support.constraint.ConstraintLayout>
-    !-- Main content -->
+            android:layout_height="match_parent">
+
+
+            <android.support.design.widget.NavigationView
+                android:id="@+id/navigation"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/bc"
+                android:layoutDirection="rtl"
+                app:headerLayout="@layout/flowing_header_layout"
+                app:itemIconTint="#fff"
+                app:itemTextColor="#fff"
+                app:menu="@menu/menu_item"
+                app:theme="@style/NavigationDrawerStyle" />
+
+        </com.mxn.soul.flowingdrawer_core.FlowingMenuLayout>
+
+    </com.mxn.soul.flowingdrawer_core.FlowingDrawer>
 
     <android.support.design.bottomappbar.BottomAppBar
         android:id="@+id/bottomappbar"
@@ -141,7 +157,7 @@
     <android.support.design.widget.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
+        app:fabSize="normal"
         android:backgroundTint="#22bf32"
         android:src="@drawable/ic_bell"
         app:layout_anchor="@id/bottomappbar"
