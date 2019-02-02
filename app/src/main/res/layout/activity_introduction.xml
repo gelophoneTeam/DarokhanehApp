@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".Introduction">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <steelkiwi.com.library.view.IndicatorView
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        app:iv_bar_color="#fff"
+        app:iv_corner_radius="50dp"
+        app:iv_idle_color="#9bfa97"
+        app:iv_item_amount="3"
+        app:iv_select_color="#24fd41"
+        app:iv_text_color="#fff"
+        app:layout_constraintBottom_toBottomOf="@+id/view_pager" />
+
+</android.support.constraint.ConstraintLayout>
