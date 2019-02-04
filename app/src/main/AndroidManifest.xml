@@ -22,7 +22,8 @@
         <activity android:name=".CounterDown" />
         <activity android:name=".Noskhe" />
         <activity android:name=".NoNoskhe" />
-        <activity android:name=".Factor"></activity>
+        <activity android:name=".Factor" />
+        <activity android:name=".Profil"></activity>
     </application>
 
 </manifest>
