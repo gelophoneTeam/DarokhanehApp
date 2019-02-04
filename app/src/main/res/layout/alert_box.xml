@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#f5f5f5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/alertTitle"
+        android:layout_width="371dp"
+        android:layout_height="74dp"
+        android:text="آیا از ارسال درخواست اطمینان دارید؟"
+        android:textAlignment="center"
+        android:textColor="#18a913"
+        android:layout_gravity="center"
+        android:layout_marginBottom="170dp"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/AlertMassage"
+        android:layout_width="300dp"
+        android:layout_height="280dp"
+        android:text="کاربر گرامی آیا از صحیح بودن اطلاعات وارد شده اطمینان داارید؟"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textDirection="inherit"
+        android:layout_gravity="center"
+        android:layout_marginTop="170dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/abb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buw"
+        android:text="بله"
+        android:textColor="#06f5ac"
+        android:textSize="20dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="150dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/abn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buw"
+        android:text="خیر"
+        android:textColor="#4c53fe"
+        android:textSize="20dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginRight="150dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>
