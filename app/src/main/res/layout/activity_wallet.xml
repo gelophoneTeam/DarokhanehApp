@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Wallet">
+
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="142dp"
+        android:background="@drawable/toolbar">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:src="@drawable/ic_videos_purchased" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:layout_marginLeft="300dp"
+            android:src="@drawable/ic_menu" />
+    </android.support.v7.widget.Toolbar>
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="301dp"
+        android:layout_height="192dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="70dp"
+        android:src="@drawable/walletpharm" />
+
+    <com.github.florent37.shapeofview.shapes.RoundRectView
+        android:id="@+id/roundRectView2"
+        android:layout_width="360dp"
+        android:layout_height="135dp"
+        android:layout_below="@+id/image"
+        android:elevation="4dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="250dp"
+        app:roundRect_bottomLeftDiameter="30dp"
+        app:roundRect_bottomRightDiameter="30dp"
+        app:roundRect_topLeftDiameter="30dp"
+        app:roundRect_topRightDiameter="30dp">
+
+
+        <Spinner
+            android:id="@+id/spinnerw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/btnw"
+            android:entries="@array/price"
+            android:textAlignment="center"
+            android:textDirection="rtl"
+            android:textStyle="bold" />
+
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="80dp"
+            android:src="@drawable/ic_group_870" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="80dp"
+            android:src="@drawable/ic_checked" />
+
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+
+
+    <android.support.design.bottomappbar.BottomAppBar
+        android:id="@+id/bottomappbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:backgroundTint="#fff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:paddingEnd="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            >
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_user_male"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                />
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_credit_card"
+                android:paddingRight="20dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_group_1"
+                android:paddingLeft="40dp"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_wallet"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+        </LinearLayout>
+    </android.support.design.bottomappbar.BottomAppBar>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="normal"
+        android:backgroundTint="#22bf32"
+        android:src="@drawable/ic_bell"
+        app:layout_anchor="@id/bottomappbar"
+        android:id="@+id/bottomfab"
+        />
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">DarokhanehApp</string>
+
+    <string-array name="price">
+        <item>10000 تومان</item>
+        <item>15000 تومان</item>
+        <item>20000 تومان</item>
+        <item>25000 تومان</item>
+        <item>30000 تومان</item>
+
+
+    </string-array>
 </resources>
